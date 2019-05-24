@@ -14,7 +14,7 @@
         android:id="@+id/textView2"
         android:layout_width="424dp"
         android:layout_height="50dp"
-        android:layout_marginTop="136dp"
+        android:layout_marginTop="132dp"
         android:gravity="center_horizontal"
         android:text="IP Inventory"
         android:textColor="@color/colorAccent"
