@@ -59,7 +59,7 @@ public class state extends Activity {
         );
         frozenTable = (TableLayout)findViewById(R.id.frozenTable);
         productList = new ArrayList<HashMap<String,String>>();
-        getData("http://192.168.56.1/PHP_connection.php");
+        getData("http://54.180.116.239/PHP_connection.php");
     }
 
 
