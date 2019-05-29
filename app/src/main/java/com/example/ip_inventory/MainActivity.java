@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        // 재고 입력
         Button button1=(Button)findViewById(R.id.btn1);
         button1.setOnClickListener(
                 new Button.OnClickListener(){
