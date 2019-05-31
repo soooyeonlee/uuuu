@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="22dp"
-    tools:context=".MainActivity">
+    tools:context=".EditActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -29,6 +28,14 @@
             android:textColor="#e2f209df"
             android:textSize="20dp" />
 
+
+        <EditText
+            android:id="@+id/id"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:hint="Id"
+            android:visibility="invisible" />
+
         <EditText
             android:id="@+id/name"
             android:layout_width="match_parent"
@@ -48,22 +55,37 @@
             android:hint="Salary" />
 
         <Button
-            android:id="@+id/btn_add"
-            android:onClick="createEmployee"
+            android:id="@+id/btn_update"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="#fff"
             android:background="#e21ace41"
-            android:text="Add Employee"/>
+            android:onClick="updateEmployee"
+            android:text="Edit Employee"
+            android:textColor="#fff" />
+
         <Button
             android:id="@+id/btn_list"
-            android:onClick="employeeList"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="#fff"
             android:layout_marginTop="11dp"
-            android:background="#e2152099"
-            android:text="Employee List"/>
+            android:background="#c28c27a6"
+            android:onClick="listEmployee"
+            android:text="Show Employee List"
+            android:textColor="#fff" />
+
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp"
+            android:background="#e2d11527"
+            android:onClick="deleteEmployee"
+            android:text="Delete Employee"
+            android:textColor="#fff" />
+
+
+
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
+
